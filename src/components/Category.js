@@ -5,10 +5,11 @@ import { makeStyles } from '@material-ui/core/styles';
 const useStyles = makeStyles({
   root: {
     width: '10rem',
+  },
+  title: {
     display: 'flex',
-    flexDirection: 'column',
     justifyContent: 'center',
-  }
+  },
 })
 
 export default function Category(props) {
@@ -16,7 +17,7 @@ export default function Category(props) {
 
   return (
     <Paper className={classes.root} onClick={() => props.show === props.name ? props.setShow(undefined) : props.setShow(props.name)}>
-      <div>
+      <div className={classes.title}>
         <p>{props.name}</p>
       </div>
       <Collapse in={props.show === props.name}>

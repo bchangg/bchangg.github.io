@@ -1,0 +1,15 @@
+#sidebar {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20vw;
+  height: 100vh;
+
+  .profile {
+    text-align: center;
+
+    img {
+      max-width: 4rem;
+    }
+  }
+}
