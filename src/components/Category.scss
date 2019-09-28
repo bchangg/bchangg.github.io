@@ -1,8 +1,14 @@
-#main {
+#category {
   width: 10rem;
 
   .title {
     display: flex;
+    justify-content: center;
+  }
+
+  .collapse {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
   }
 }
