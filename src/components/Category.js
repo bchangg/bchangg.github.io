@@ -17,7 +17,7 @@ export default function Category(props) {
   const classes = useStyles();
 
   return (
-    <Paper id='main' onHover={() => props.show === props.name ? props.setShow(undefined) : props.setShow(props.name)}>
+    <Paper id='main' onMouseEnter={() => props.setShow(props.name)} onMouseLeave={() => props.setShow(undefined)}>
       <div className={classes.title}>
         <p>{props.name}</p>
       </div>
