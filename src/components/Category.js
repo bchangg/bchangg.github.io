@@ -1,6 +1,7 @@
 import React from 'react';
 import { Paper, Collapse } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
+import 'components/Category.scss';
 
 const useStyles = makeStyles({
   root: {
@@ -16,7 +17,7 @@ export default function Category(props) {
   const classes = useStyles();
 
   return (
-    <Paper className={classes.root} onClick={() => props.show === props.name ? props.setShow(undefined) : props.setShow(props.name)}>
+    <Paper id='main' onHover={() => props.show === props.name ? props.setShow(undefined) : props.setShow(props.name)}>
       <div className={classes.title}>
         <p>{props.name}</p>
       </div>

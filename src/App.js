@@ -7,6 +7,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const useStyles = makeStyles({
   root: {
     display: 'flex',
+    marginTop: '3rem',
   },
 })
 
